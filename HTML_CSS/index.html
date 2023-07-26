@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MOBILE Car Wash Service</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <section id="header" class="header">
+    <div class="nav-bar">
+      <div class="logo">
+          <img src ="img/logosmall.png" alt="">
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html" class="active">Home<span>.</span></a></li>
+          <li><a href="plan.html">Packages</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="testimoni.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="row">
+        <div class="left-sec">
+          <div class="content">
+              
+            <h2><span>Clean</span><br>Always</h2>
+            <p> We provide a Mobile Car Wash service at your doorstep. 
+                We believe in giving the best quality service to our clients. 
+                We use all the best products to make your car look luxurious. 
+                You can get Washes, Vacuum Interiors, Foaming Wax and Sealer Wax and other car cleaning services 
+                at affordable price and affordable packages.
+            </br>
+            <br>BOOK NOW!! </br><br>To give a new life to your car &amp; stop riding dirty. We are happy to give an awesome car washing experience to your car. Make your car look younger.</p>
+            <h3><strong>Call Now 111-420-481</strong></h3>
+            <h3><strong>ON DEMAND SUBSCRIPTIONS &#8211; PRICES BELOW</strong></h3>
+
+        </div>
+          <button class="discover-btn">
+            <a href="customerlogin.html">Log In</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+          </button>
+          <div class="register">
+            <a href="RegistrationForm.html" class="text">Click here to sign up for free now.</a>  
+          </div>
+          <div class="information">
+              <a href="LoginAdmin.html" class="admin-btn">For Admin</a>
+            <div class="production">
+              <a href="LoginCarWasher.html" class="admin-btn">For Car Washer</a>
+            </div>
+          </div>
+        </div>
+        <div class="right-sec">
+          <div class="my-car">
+            <div><img src="img/1.png"></div>
+            <div><img src="img/2.png"></div>
+            <div><img src="img/3.png"></div>
+            <div><img src="img/4.png"></div>
+            <div><img src="img/5.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+          
+  
+    
+<!-- Jquery CDN Link -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    
+  });
+
+  $(".my-car").slick({
+    autoplay: true,
+	  speed:1000,
+    dots: true,
+    customPaging : function(slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<a>'+(i+1)+'</a>';
+  },
+   
+});
+</script>
+</body>
+</html>

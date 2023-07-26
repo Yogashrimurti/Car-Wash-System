@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  a,a:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  #header{
+    width: 100%;
+    height: 100vh;
+    background: #26284e;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  #header .nav-bar{
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+  }
+  
+  #header .nav-bar .logo{
+    margin-left: 50px;
+  }
+  
+  #header .nav-bar .logo a{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  
+  #header .nav-bar .logo span{
+    font-size: 35px;
+    color: #d43242;
+    margin-left: 5px;
+  }
+  
+  #header .nav-bar .menu ul li{
+    margin-right: 30px;
+    display: inline-block;
+  }
+  
+  #header .nav-bar .menu ul li a{
+    font-size: 19px;
+    opacity: 0.6;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+  }
+  
+  #header .nav-bar .menu ul li a.active{
+    opacity: 1;
+  }
+  
+  #header .nav-bar .menu ul li span{
+    position: absolute;
+    top: 0px;
+    color: #d43242;
+    font-size: 75px;
+  }
+  
+  #header .nav-bar .menu ul li a:hover{
+    opacity: 1;
+  }
+  
+  #header .nav-bar .social-media ul li{
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+  
+  #header .nav-bar .social-media ul li i{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    line-height: 45px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    background-color: #cac5c542;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #header .nav-bar .social-media ul li i:hover{
+    background-color: rgb(255 0 0 / 0.9);
+  }
+
+  .planhero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    background: #26284e;
+  }
+  
+  .planhero .planbox{
+      width: 300px;
+      border-radius: 25px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555555;
+      margin: 15px;
+  }
+  
+  .planhero .planbox_highlighted{
+      box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+      transform: scale(1.05);
+  }
+  
+  .planbox_specialtext{
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      background: #ba2d3b;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) inset;
+  }
+  
+  .planhero .planbox .plan_header{
+      padding: 25px;
+      background: #d43242;
+      color: #fff     
+  }
+
+  .planhero .planbox .plan_title{
+      font-size: 1.5em;
+      font-weight: 400;
+  }
+  
+  .planhero .planbox .plan_title,
+  .planhero .planbox .plan_desc{
+      margin: 0;
+      text-align: center;
+  }
+  
+  .planhero .planbox .plan_desc{
+      font-size: 1em;
+      font-weight: 300;
+  }
+  
+  .planhero .planbox .plan_content{
+      padding: 25px;
+      background: #fff;
+  }
+
+  .planhero .planbox .plan_content .plan_list{
+      padding: 0px;
+      margin: 0; 
+  }
+  
+  .planhero .planbox .plan_content .plan_feature{
+      margin: 0;
+      padding-left: 25px;
+      position: relative;
+      font-size: 0.9em;
+  }
+  
+  .planhero .planbox .plan_content .plan_feature:not(:last-child){
+      margin-bottom: 0.5em;
+  }
+  
+  .planhero .planbox .plan_content .plan_feature::before{
+      content: "\2714";
+      color: #d43242;
+      left: 0;
+      position: absolute;
+  }
+  
+  .planhero .planbox .plan_actions{
+      padding: 25px;
+      border-top: 1px solid #000000;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+  }
+  
+  .planhero .planbox .plan_actions .plan_button{
+      display: inline-block;
+      margin: 15px auto;
+      padding: 8px 20px;
+      text-decoration: none;
+      color: #fff;
+      background: #ffa938;
+      border-radius: 5px;
+      border: 1px solid #ffa938;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      font-weight: bold;
+  }
+  
+  .planhero .planbox .plan_actions .plan_button:hover{
+      background: #d43242;
+      color: #000000;
+      border: 1px solid #d43242;
+  }
+  
+  .planhero .planbox .plan_actions .plan_cost{
+      margin: 0;
+      text-align: center;
+      font-size: 2em;
+      color: #000000;
+  }
+  
+  .planhero .planbox .plan_actions .plan_text{
+      font-size: 0.9em;
+      text-align: center;
+      margin: 0 0 10px 0;
+  }
+
